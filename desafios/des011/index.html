@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    body {
+        background: url(imagens/espaco.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+
+    div#fora {
+        height: 96vh;
+        position: relative;
+    }
+
+    div#dentro {
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="fora">
+        <div id="dentro">
+            <picture>
+                <source media="(max-width: 550)" srcset="imagens/astronauta-p.png">
+                <img src="imagens/astronauta.png" alt="astronauta">
+            </picture>
+        </div>
+    </div>
+
+</body>
+</html>
