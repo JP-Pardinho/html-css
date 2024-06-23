@@ -15,13 +15,16 @@
     <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome">
+            <input type="text" name="nome" id="inome" required>
         </p>
         <p>
             <label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome" >
+            <input type="text" name="sobrenome" id="isobrenome" required>
         </p>
-        <p><input type="submit" value="enviar"></p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form> 
 </body>
 </html>
